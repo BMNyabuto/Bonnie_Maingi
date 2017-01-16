@@ -6,6 +6,6 @@ def PrimeFunc(n):
 		
 			RetnList[i*i::2*i] = [False]*((n-1*i-1)/(2*i)+1)
 				
-	return [i for i in range(3, n, 2) if RetnList[i]]
+	return [2] + [i for i in range(3, n, 2) if RetnList[i]] 
 		
 		
